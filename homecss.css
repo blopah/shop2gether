@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+/* PRIMEIRA BARRA DO HEADER */
+
+article.promo {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 6px 0 6px 0;
+    width: 100%;
+    height: 35px;
+}
+
+/* SEGUNDA BARRA DO HEADER */
+
+article.twoCollab {
+    /* background-color: green; */
+    width: 100%;
+    height: 34px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);    
+}
+
+article.twoCollab div.content {
+    height: 100%;
+    /* width: 80%; */
+    /* background-color: red; */
+    max-width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px rgba(0, 0, 0, 0.07);
+}
+
+/* LADO ESQUERDO DA SEGUNDA BARRA DO HEADER (TWO COLLAB) */
+
+article div.content div.left {
+    height: 100%;
+    /* max-width: 1097px; */
+    /* margin: 0 auto; */
+}
+
+/* LADO DIREITO DA SEGUNDA BARRA DO HEADER (LOGIN E BAG) */
+
+article div.content div.left img {
+    filter: brightness(0);
+    padding-top: 3px;
+    height: 70%;
+}
+
+article div.content div.right {
+    height: 100%;
+    /* max-width: 1097px; */
+    /* margin: 0 auto; */
+    display: flex;
+    padding-right: 18px;
+    /* height: inherit; */
+}
+
+article div.content div.right div.login {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+article div.content div.right div.login img {
+    width: 16px;
+    height: 12px;
+    margin: 5px;
+}
+
+article div.content div.right div.bag {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+article div.content div.right div.bag img {
+    width: 20px;
+    height: 19px;
+    margin: 5px;
+}
+
+/* TERCEIRA BARRA O HEADER (LOGO E SEARCH) */
+
+section.logoESearch {
+    background-color: red;
+    width: 100%;
+}
+
+section.logoESearch div.content {
+    /* display: grid;
+    grid-template-columns: repeat(31, 1fr); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1168px;
+    background-color: green;
+    height: 73px;
+}
+
+section.logoESearch div.content div.logo {
+    /* grid-column: 13/20; */
+    /* margin: 0 auto; */
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 318px;
+    min-width: 318px;
+    justify-self: center;
+    /* height: 100%; */
+    top: 30px;
+}
+
+section.logoESearch div.content div.logo img {
+    flex: 0.5;
+}
+
+section.logoESearch div.content form.search {
+    flex: 1;
+    /* grid-column: 11/13; */
+    /* display: block; */
+    /* justify-self: center; */
+    /* margin-top: -20px; */
+}
+
+section.logoESearch div.content form.search input {
+    /* justify-self: flex-end; */
+    margin: auto 0 0 auto;
+}
