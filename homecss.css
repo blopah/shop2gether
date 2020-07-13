@@ -94,7 +94,7 @@ article div.content div.right div.bag img {
 /* TERCEIRA BARRA O HEADER (LOGO E SEARCH) */
 
 section.logoESearch {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ section.logoESearch div.content {
     justify-content: flex-end;
     margin: 0 auto;
     max-width: 1168px;
-    background-color: green;
+    /* background-color: green; */
     height: 73px;
 }
 
@@ -125,6 +125,9 @@ section.logoESearch div.content div.logo {
 
 section.logoESearch div.content div.logo img {
     flex: 0.5;
+    height: 38px;
+    margin-top: 12px;
+    margin-right: 45px;
 }
 
 section.logoESearch div.content form.search {
@@ -139,5 +142,14 @@ section.logoESearch div.content form.search {
 }
 
 section.logoESearch div.content form.search input {
+    border: solid 1px black;
+    width: 190px;
+    height: 34px;
     /* justify-self: flex-end; */
 }
+
+::placeholder {
+    color: black;
+    opacity: 0.95;
+    padding-left: 3px;
+  }
