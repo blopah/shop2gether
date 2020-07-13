@@ -129,6 +129,9 @@ section.logoESearch div.content div.logo img {
 
 section.logoESearch div.content form.search {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
     /* grid-column: 11/13; */
     /* display: block; */
     /* justify-self: center; */
@@ -137,5 +140,4 @@ section.logoESearch div.content form.search {
 
 section.logoESearch div.content form.search input {
     /* justify-self: flex-end; */
-    margin: auto 0 0 auto;
 }
