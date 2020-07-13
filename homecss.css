@@ -153,3 +153,50 @@ section.logoESearch div.content form.search input {
     opacity: 0.95;
     padding-left: 3px;
   }
+
+/* MENU DE NACEGAÇÃO */
+
+header nav.menu {
+    width: 100%;
+    /* padding: 10px; */
+    margin: 10px 0;
+}
+
+header nav.menu nav {
+    margin: 5px auto;
+}
+
+header nav.menu nav.mascEFem {
+
+}
+
+header nav.menu nav.mascEFem ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav.menu nav.mascEFem ul li.selecionado {
+
+}
+
+header nav.menu nav.categorias {
+    background-color: #ebd7ce;
+    justify-content: space-around;
+    display: flex;
+    padding: 13px;
+}
+
+header nav.menu nav.categorias ul {
+    /* margin: 0 auto; */
+    /* background-color: red; */
+    max-width: 1147px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav.menu nav ul li {
+
+}
