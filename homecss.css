@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: 'Futura-Book';
+  src: url('font/Futura-Book.ttf');
+  src: url('font/Futura-Book.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Futura-Book';
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +21,8 @@ header {
     align-items: center;
     /* background-color: blue; */
 }
+
+/* HEADER ============================================================================== */
 
 /* PRIMEIRA BARRA DO HEADER */
 
@@ -145,6 +158,12 @@ section.logoESearch div.content form.search input {
     border: solid 1px black;
     width: 190px;
     height: 34px;
+    background-image: url(img/lupa.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 164px;
+    background-size: 11.5%;
+    background-color: #F6F6F6;
     /* justify-self: flex-end; */
 }
 
@@ -154,37 +173,48 @@ section.logoESearch div.content form.search input {
     padding-left: 3px;
   }
 
-/* MENU DE NACEGAÇÃO */
+/* MENU DE NACEGAÇÃO ==============================================================================*/
 
 header nav.menu {
     width: 100%;
-    /* padding: 10px; */
-    margin: 10px 0;
 }
 
-header nav.menu nav {
+/* header nav.menu nav {
     margin: 5px auto;
-}
+} */
 
 header nav.menu nav.mascEFem {
-
+    /* background-color: blue; */
+    justify-content: center;
+    display: flex;
 }
 
 header nav.menu nav.mascEFem ul {
+    /* background-color: red; */
+    max-width: 1243px;
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-start;
 }
 
-header nav.menu nav.mascEFem ul li.selecionado {
+header nav.menu nav.mascEFem ul li {
+    font-weight: bolder;
+    background-color: #ebd7ce;
+    padding: 8px 3.5%;
+    text-align: center;
+}
 
+header nav.menu nav.mascEFem ul li.inativo {
+    background-color: white;
+    color: #a4a4a4;
 }
 
 header nav.menu nav.categorias {
     background-color: #ebd7ce;
     justify-content: space-around;
     display: flex;
-    padding: 13px;
+    padding: 8px;
 }
 
 header nav.menu nav.categorias ul {
@@ -198,5 +228,184 @@ header nav.menu nav.categorias ul {
 }
 
 header nav.menu nav ul li {
+    font-size: 0.95em;
+}
 
+/* MAIN MOSAICO ============================================================================== */ 
+/* FAIXA UM */
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+main section.linhaUm {
+    background-color: red;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+main section.linhaUm div.esquerda {
+    flex: 1;
+    display: grid;
+    height: 50vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main section.linhaUm div.esquerda div.um {
+    grid-area: 1/1/2/2;
+    background-color: pink;
+}
+
+main section.linhaUm div.esquerda div.um img {
+    width: 100%;
+    height: 100%;
+}
+
+main section.linhaUm div.direita {
+    background-color: yellow;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+main section.linhaUm div.direita div.um {
+    grid-area: 1/1/3/2;
+    background-color: purple;
+}
+
+main section.linhaUm div.direita div.dois {
+    grid-area: 1/2/2/3;
+    background-color: black;
+}
+
+main section.linhaUm div.direita div.tres {
+    grid-area: 2/2/2/3;
+    background-color: yellow;
+}
+
+main section.linhaUm div.direita div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+main section.linhaUm div.direita div:nth-child(2):hover img[src="img/home/03_MOSAICO_DESK.jpg"] {
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+main section.linhaUm div.direita div:nth-child(2):not(:hover) img[src="img/home/03_MOSAICO_DESK.jpg"] {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/* FAIXA DOIS */
+
+main section.linhaDois {
+    background-color: red;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+main section.linhaDois div.esquerda {
+    flex: 1;
+    display: grid;
+    height: 50vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+main section.linhaDois div.esquerda div.um {
+    grid-area: 1/1/2/2;
+    background-color: white;
+}
+
+main section.linhaDois div.esquerda div.dois {
+    grid-area: 2/1/3/2;
+}
+
+main section.linhaDois div.esquerda div.tres {
+    grid-area: 1/2/3/2;
+}
+
+main section.linhaDois div.esquerda div img {
+    width: 100%;
+}
+
+main section.linhaDois div.esquerda div:nth-child(1) img {
+    margin-top: 20%;
+}
+
+main section.linhaDois div.direita {
+    background-color: yellow;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main section.linhaDois div.direita div.um {
+    grid-area: 1/1/2/2;
+    background-color: purple;
+}
+
+main section.linhaDois div.direita div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* FAIXA TRES */
+
+main section.linhaTres {
+    background-color: orange;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+main section.linhaTres div.esquerda {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main section.linhaTres div.esquerda div.um {
+    grid-area: 1/1/2/2;
+}
+
+main section.linhaTres div.esquerda div img {
+    object-fit: cover;
+    width: 100%;
+}
+
+main section.linhaTres div.direita {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+main section.linhaTres div.direita div.um {
+    grid-area: 1/1/3/2;
+}
+
+main section.linhaTres div.direita div.dois {
+    grid-area: 1/2/2/3;
+}
+
+main section.linhaTres div.direita div.tres {
+    grid-area: 2/2/3/3;
+}
+
+main section.linhaTres div.direita div img {
+    object-fit: cover;
+    width: 100%;
 }
