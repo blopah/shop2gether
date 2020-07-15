@@ -410,6 +410,10 @@ main section.linhaTres div.direita div img {
     width: 100%;
 }
 
+.logo-responsivo {
+    display: none;
+}
+
 @media(max-width:770px){
     article.promo {
         height: auto;
@@ -431,11 +435,17 @@ main section.linhaTres div.direita div img {
         display: none;
     }
 
-    section.logoESearch div.content div.logo{
-        width: 50%;
+    .logo-responsivo {
+        display: block;
+        width: 100%;
+    }
+
+    section.logoESearch div.content div.logo {
+        display: none;
+        /* width: 50%;
         flex: 0;
         justify-content: center;
-        min-width: 80%
+        min-width: 80% */
     }
 
     section.logoESearch div.content div.logo img{
