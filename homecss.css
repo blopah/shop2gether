@@ -240,9 +240,9 @@ main {
 }
 
 main section.linhaUm {
-    background-color: red;
+    /* background-color: red; */
     width: 100vw;
-    height: 50vw;
+    /* height: 50vw; */
     display: flex;
     flex-direction: row;
 }
@@ -250,14 +250,14 @@ main section.linhaUm {
 main section.linhaUm div.esquerda {
     flex: 1;
     display: grid;
-    height: 50vw;
+    /* height: 50vw; */
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 101%;
 }
 
 main section.linhaUm div.esquerda div.um {
     grid-area: 1/1/2/2;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 main section.linhaUm div.esquerda div.um img {
@@ -266,26 +266,26 @@ main section.linhaUm div.esquerda div.um img {
 }
 
 main section.linhaUm div.direita {
-    background-color: yellow;
+    /* background-color: yellow; */
     flex: 1;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 49% 49%;
 }
 
 main section.linhaUm div.direita div.um {
     grid-area: 1/1/3/2;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 main section.linhaUm div.direita div.dois {
     grid-area: 1/2/2/3;
-    background-color: black;
+    /* background-color: black; */
 }
 
 main section.linhaUm div.direita div.tres {
     grid-area: 2/2/2/3;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 main section.linhaUm div.direita div img {
@@ -306,9 +306,9 @@ main section.linhaUm div.direita div:nth-child(2):not(:hover) img[src="img/home/
 /* FAIXA DOIS */
 
 main section.linhaDois {
-    background-color: red;
+    /* background-color: red; */
     width: 100vw;
-    height: 50vw;
+    /* height: 50vw; */
     display: flex;
     flex-direction: row;
 }
@@ -316,9 +316,9 @@ main section.linhaDois {
 main section.linhaDois div.esquerda {
     flex: 1;
     display: grid;
-    height: 50vw;
+    /* height: 50vw; */
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 49% 49%;
 }
 
 main section.linhaDois div.esquerda div.um {
@@ -343,16 +343,16 @@ main section.linhaDois div.esquerda div:nth-child(1) img {
 }
 
 main section.linhaDois div.direita {
-    background-color: yellow;
+    /* background-color: yellow; */
     flex: 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 101%;
 }
 
 main section.linhaDois div.direita div.um {
     grid-area: 1/1/2/2;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 main section.linhaDois div.direita div img {
@@ -363,9 +363,9 @@ main section.linhaDois div.direita div img {
 /* FAIXA TRES */
 
 main section.linhaTres {
-    background-color: orange;
+    /* background-color: orange; */
     width: 100vw;
-    height: 50vw;
+    /* height: 50vw; */
     display: flex;
     flex-direction: row;
 }
@@ -374,7 +374,7 @@ main section.linhaTres div.esquerda {
     flex: 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 101%;
 }
 
 main section.linhaTres div.esquerda div.um {
@@ -390,7 +390,7 @@ main section.linhaTres div.direita {
     flex: 1;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 49% 49%;
 }
 
 main section.linhaTres div.direita div.um {
@@ -408,4 +408,60 @@ main section.linhaTres div.direita div.tres {
 main section.linhaTres div.direita div img {
     object-fit: cover;
     width: 100%;
+}
+
+@media(max-width:770px){
+    article.promo {
+        height: auto;
+    }
+
+    article.twoCollab div.content {
+        display: none;
+    }
+
+    .twoCollab{
+        display: none;
+    }
+
+    section.logoESearch div.content{
+        justify-content: center;
+    }
+
+    section.logoESearch div.content form.search{
+        display: none;
+    }
+
+    section.logoESearch div.content div.logo{
+        width: 50%;
+        flex: 0;
+        justify-content: center;
+        min-width: 80%
+    }
+
+    section.logoESearch div.content div.logo img{
+        margin-top: 0px;
+        margin-right: 0px;
+        flex: 0;
+        width: 80%;
+    }
+
+    header nav.menu{
+        display: none;
+    }
+
+    .responsive{
+        width: 12.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-responsive{
+        height: 22px;
+        width: 22px;
+    }
+
+    main section.linhaTres, main section.linhaDois, main section.linhaUm {
+        flex-direction: column;
+    }
 }
