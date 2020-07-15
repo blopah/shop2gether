@@ -27,8 +27,8 @@ header {
 /* PRIMEIRA BARRA DO HEADER */
 
 article.promo {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.7);
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
     text-align: center;
     padding: 6px 0 6px 0;
     width: 100%;
